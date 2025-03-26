@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #dff6ff, #91c8e4);
+            margin: 0;
+        }
+        .otp-container {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 320px;
+        }
+        h2 {
+            margin-bottom: 15px;
+            color: #333;
+            font-weight: bold;
+        }
+        .otp-input-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .otp-input {
+            width: 50px;
+            height: 50px;
+            font-size: 22px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.3);
+            outline: none;
+        }
+        .otp-input:focus {
+            border-color: #0077b6;
+            background: rgba(255, 255, 255, 0.5);
+        }
+        .verify-btn {
+            margin-top: 20px;
+            padding: 12px 20px;
+            border: none;
+            background: #0077b6;
+            color: white;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 100%;
+        }
+        .verify-btn:hover {
+            background: #023e8a;
+        }
+    </style>
+</head>
+<body>
+    <div class="otp-container">
+        <h2>Enter OTP</h2>
+        <div class="otp-input-container">
+            <input type="text" class="otp-input" maxlength="1" required>
+            <input type="text" class="otp-input" maxlength="1" required>
+            <input type="text" class="otp-input" maxlength="1" required>
+            <input type="text" class="otp-input" maxlength="1" required>
+        </div>
+        <button class="verify-btn">Verify OTP</button>
+    </div>
+</body>
+</html>

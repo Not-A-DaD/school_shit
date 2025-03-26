@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.hero h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1em;
+    color: white;
+    background: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.btn-secondary {
+    background: #28a745;
+}
+
+.btn-secondary:hover {
+    background: #1f7a35;
+}
+
+/* Features Section */
+.features {
+    background: white;
+    padding: 50px 20px;
+}
+
+.features h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.feature-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;  /* Allows items to wrap on smaller screens */
+    gap: 20px;
+}
+
+.feature {
+    width: 45%; /* Two items per row on tablets */
+    min-width: 250px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Join Section */
+.join {
+    background: #f8f9fa;
+    padding: 50px 20px;
+    border-top: 2px solid #e0e0e0;
+}
+
+.join h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.join .btn {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .feature-box {
+        flex-direction: column; /* Stack features vertically on mobile */
+        align-items: center;
+    }
+
+    .feature {
+        width: 80%; /* Make each feature full-width on mobile */
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .btn {
+        width: 80%;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature {
+        width: 95%;
+    }
+
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.6em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 10px;
+    }
+}
